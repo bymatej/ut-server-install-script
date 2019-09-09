@@ -14,6 +14,7 @@ function Download_And_Install_Server() {
     cd System
     ln -s libSDL-1.1.so.0 libSDL-1.2.so.0
     cd ~/ut2000/ut-server
+    chmod chmod a+x ~/ut2000/ut-server/ucc
 }
 
 # Create directory structure for installation
@@ -32,5 +33,5 @@ Create_Directories_For_Installation
 Download_And_Install_Server
 # todo: delete archive files after instalation
 Print_Message_And_Sleep "Matej's Unreal Tournament 2000 Server script has finished successfully!" 1s
-Print_Message_And_Sleep "Login as $username user and go to ~/ut2000/ut-server/ directory and run the ASU using the ./asu.sh command and configure your server" 5s
+Print_Message_And_Sleep "Login as $username user and go to ~/ut2000/ut-server/ directory and run the ASU using the bash asu.sh command and configure your server" 5s
 exit

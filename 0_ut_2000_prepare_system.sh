@@ -63,6 +63,9 @@ function Prepare_System_For_Installation() {
 	sudo adduser $username --gecos "Unreal, , , " --disabled-password # Add the specified user with all the details
 	#echo "$password" | passwd "$username" --stdin
 	echo $username:$password | sudo chpasswd
+
+	# Install this package if it is missing (assume yes on prompts)
+	sudo apt-get --assume-yes install ia32-libs
 }
 
 
