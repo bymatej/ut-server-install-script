@@ -64,8 +64,10 @@ function Prepare_System_For_Installation() {
 	#echo "$password" | passwd "$username" --stdin
 	echo $username:$password | sudo chpasswd
 
-	# Install this package if it is missing (assume yes on prompts)
+	# Install these packages if they are missing (assume yes on prompts)
 	sudo apt-get --assume-yes install ia32-libs
+	sudo apt-get --assume-yes install lib32ncurses5
+	sudo apt-get --assume-yes install lib32z1
 }
 
 
