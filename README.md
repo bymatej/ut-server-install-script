@@ -9,6 +9,8 @@ Unreal Tournament 2000 Server Installation Script
 Installation:
 - http://wiki.unrealadmin.org/Server_Install_linux
 - https://steamcommunity.com/app/13240/discussions/0/451850849190122404/
+- https://www.oldunreal.com/wiki/index.php?title=UnrealTournament_Server_Guide
+- https://steamcommunity.com/app/13240/discussions/0/846946775287232755
 
 UT FILES DOWNLOAD:
 - http://ut-files.com
